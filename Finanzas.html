@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!---Lenguaje y dirección de lectura de la página-->
+<html lang="es" dir="ltr">
+<!--head y su contenido-->
+
+<head>
+    <!-- Información de la web, como el charset, el nombre del contenido-->
+    <meta charset="UTF-8">
+    <meta name="Descripcion" content="Finanzas básicas">
+    <meta name="author" content="Jose Noel Cortavarria">
+    <meta name="keywords" content="Lenguaje de Marcas,Practica,ASIX,ASIR,Finanzas">
+    <!--El titulo de la pestaña que quiero que aparezca-->
+    <title>Finanzas básicas</title>
+    <!--Ahora quiero insertar el icono que aparecerá en la pestaña del nagvegador-->
+    <link rel="icon" href="./practica1/imagenes_pagina1/icono3.png">
+    <link rel="stylesheet" href="./css/finanzas_stylesheet.css">
+</head>
+<!-- inicio body-->
+
+<body>
+<div id="headerr">
+    <!--Inicio header-->
+    <header >
+        <!-- Titulo y subtitulo de la pagina , he añadido cursiva con <em> -->
+        <h1>Guia de finanzas basicas</h1>
+        <p class="importante">Aprende a manejar tu dinero</p>
+
+
+    </header>
+</div>
+
+    <!-- Incorporación de nav para menu pagina-->
+    <nav id="barra_navegacion" >
+        <!--se usa el <a href="#id"></a> para referenciar una id que esta en la misma pagina web-->
+        <a href="#Introduccion">Introduccion</a>
+        <a href="#Conceptos">Conceptos clave</a>
+        <a href="#Consejos">Consejos financieros</a>
+        <a href="#Money">More money</a>
+        <a href="#local">Localización</a>
+
+    </nav>
+
+
+    
+
+    <!-- Contenido principal de la pagina y su division en articulos-->
+    <main >
+        <section id="Introduccion">
+            <div id="Cita">
+                <blockquote >
+                <!-- cita en bloque , no he sabido poner <cite> hacia la derecha -->
+                    “The desire of gold is not for gold. It is for the means of freedom and benefit.” <cite> -Alguien
+                        muy sabio</cite>
+
+                </blockquote>
+            </div>
+
+            <div id="Introduccion_texto">
+                <h2>Introducción</h2>
+
+
+                <p>Las finanzas personales son una parte esencial de la vida de cualquier persona. Saber cómo manejar tu
+                    dinero te ayudará a alcanzar tus metas financieras y no ser deborado por la inflación.</p>
+                
+            </div>
+
+        </section>
+      
+        <!-- En esta sección voy a explicar los conceptos claves de las finanzas mediante una <ul> unordered list y cada elemento de la lista en <li> -->
+        <section id="Conceptos">
+            <h2>Conceptos claves : </h2>
+
+
+            <!-- Explicación de los conceptos claves pero en vez de meterlo en una lista usando las etiquetas<ul> y <ol>, he usado las etiquetas  para definiciones dd y dt -->
+            <dl>
+                <dt>Presupuesto</dt>
+                <dd>Es una herramienta para planificar tus ingresos y gastos.</dd>
+                
+                <dt>Ahorro</dt>
+                <dd>Parte de los ingresos que guardas para emergencias o proyectos futuros.</dd>
+              
+                <dt>Inversion</dt>
+                <dd> Dinero que se destina a obtener rentabilidad a largo plazo.</dd>
+              
+                <dt>Deuda<</dt>
+                <dd>Las deudas pueden ser buenas, si se usan con cabeza, por ejemplo la deuda positiva</dd>
+     
+                <!--con la etiqueta <details> y <summary> podemos hacer que al clickar un concepto aparezca texto -->
+               
+                <h2>Conceptos mas complejos</h2>
+                
+           
+
+
+                <details>
+                    <summary>Criptomoneda</summary>
+                    <p>Las criptomonedas son monedas virtuales, sin equivalente físico, que usan criptografía para
+                        asegurar las transacciones y pagos y para controlar la creación de nuevas unidades monetarias.
+                    </p>
+                </details>
+                <details>
+                    <summary>>Blockchain</summary>
+                    <p>Es un libro electrónico público que se puede compartir abiertamente entre usuarios dispares y que
+                        crea un registro inmutable de sus transacciones</p>
+                </details>
+                <!-- Lista y lista anidada en uno de los conceptos clickables de details-->
+                <details>
+                    <summary>Inversion</summary>
+                    <ul>
+                        <li>Inversion en bonos
+                            <ul>
+                                <li>Bonos del estado</li>
+                                <li>Bonos de empresas</li>
+                            </ul>
+                        </li>
+                        <li>Inversion en acciones</li>
+                        <li>Inversion en fondos</li>
+
+                    </ul>
+
+                </details>
+
+            </dl>
+
+            
+        </section>
+        <section id="Consejos">
+
+            <h2>Consejos Financieros</h2>
+            <ol>
+                <li>Haz un presupuesto mensual para controlar tus gastos.</li>
+                <li>Ahorra al menos el 10% de tus ingresos.</li>
+                <li>Evita deudas innecesarias.</li>
+                <li>Invierte en opciones seguras si eres principiante.</li>
+            </ol>
+            
+          
+        </section>
+        
+        <section id="Money">
+            <h2>Intereses </h2>
+            <!-- Insercion de imagen basica, alt para el texto alternativo ,height y width para la altura y el ancho respectivamente -->
+
+
+            <!--Aqui voy a insertar una tabla de intereses básica-->
+           
+        </section>
+        <section id="Tabla de intereses">
+            <!--cabecera de la tabla-->
+            <div id="tabla">
+                
+                
+
+                <!-- Tabla exterior para centrar el contenido en la página -->
+                <table >
+                    <tr>
+                        <td>
+                            <!-- tabla que contiene el texto y la imagen -->
+                            <table>
+                                <tr>
+                                    <!-- Columna para la tabla de intereses -->
+                                    <td>
+                                        <table border="1" cellspacing="0" cellpadding="10">
+                                            <caption>Tabla de interés simple</caption>
+                                            <!-- Añadir color a las columnas -->
+                                           
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="1">Dinero</th>
+                                                    <th rowspan="2">Interés</th>
+                                                    <th rowspan="3">Tiempo</th>
+                                                    <th rowspan="6">Interés generado</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1000$</td>
+                                                    <td>3.25</td>
+                                                    <td>1 Año</td>
+                                                    <td>32.5$</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+
+
+                                    <!-- los atributos text align center para que esten en el centro -->
+                                    <td style="text-align: center; ">
+                                       ;
+                                        <img src="./imagenes_pagina1/imagenbolsa2.png"
+                                            alt="imagen grafica bolsa de valores" width="250" height="250">
+                                    </td>`
+
+                                </tr>
+
+                            </table>
+                            <!-- espacios en blanco para estructura-->
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+           
+
+        </section>
+        <!-- añado espacios en blanco para que quede mejor estructurado (ya que no podemos usar css) -->
+   
+
+        <!-- Iframe con la ubicacion de la bolsa de valores ,ajuste del tamaño con width y height, title para el nombre de lo que contiene el iframe
+              -->
+        <section id="local">
+            <h2 >Mapa ubicación WallStreet</h2>
+            <div class="iframe-container">
+                <iframe title="Mapa de ubicacion bolsa de valores"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d330771.9123929769!2d-74.2622838702036!3d40.69458919115797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2ses!4v1731333136532!5m2!1sen!2ses"
+                    width="600" height="450" allowfullscreen loading="lazy">
+                </iframe>
+            
+
+
+
+        </section>
+
+        <!-- añadir video incrustado-->
+        <section id="video">
+            <h1 >Video de finanzas personales </h1>
+            <object data="https://www.youtube.com/embed/40nEm-3zaAs?si=AIwFyYkY2rfiFqZp" type="text/html" width="750"
+                height="550">
+                <p> Tu navegador no puede mostrar el video
+                    <a src="https://www.youtube.com/watch?v=40nEm-3zaAs">pincha aqui</a>
+                </p>
+            </object>
+
+
+
+        </section>
+
+
+        </section>
+        <div id="logos_footer">
+            <a href="https://es-es.facebook.com"><img src="./imagenes_pagina1/facebook2.png" alt="Facebook"
+                    height="30px"></a>;<a href=""><img src="./imagenes_pagina1/twitter.webp "
+                    height="30px"></a>
+        </div>
+        <!--Introducción de un formulario-->
+        <div id="contact_form">
+            <!--En action se pone la pagina a la que enviamos-->
+            <form action="">
+                <!--Label es opcional , pero input es requerido -->
+                <div class="formulariocelda">
+                    <label for="nombre">Name</label>
+                    <input type="text" name="Nombre"id="Nombre">
+                </div>
+                <div class="formulariocelda">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="Apellidos"id="Apellidos">
+                </div>
+                <div class="formulariocelda">
+                    <label for="campo_de_texto">Campo de texto</label>
+                    <textarea>Area del texto</textarea>
+                </div>
+                <div class="formulariocelda">
+                    <label for="edad">Edad</label>
+                    <input type="number">
+                </div>
+                <div class="formulariocelda">
+                    <label for="satisfaccion">Nivel de satisfacción con la página</label>
+                    <input type="range">
+                </div>
+                <div class="formulariocelda">
+                    <label for="fechayhora">Fecha y hora</label>
+                    <input type="datetime-local">
+                </div>
+                <div class="formulariocelda">
+                    <label for="sugerencia">Sugerencia de color para mejorar la pagina</label>
+                    <input type="color">
+                </div>
+                <div class="formulariocelda"
+                    <label for="sugerencia2">Mas sugerencias para mejorar la pagina</label>
+                    <input type="text" list="items">
+                    <datalist id="items">
+                        <option value="1">Colores</options>
+                        <option value="2">Estructura</option>
+                        <option value="3">Imágenes</option>
+                    </datalist>
+                </div>
+                <div class="formulariocelda">
+                    <input type="submit" value="Enviar datos">
+                </div>
+            </form>
+        </div>
+        <footer>&copy; Finanzas 2024 | Todos los derechos
+            reservados
+
+
+        </footer>
+        </div>
+
+    </main>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
